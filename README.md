@@ -1,9 +1,9 @@
-#Problem
+# Problem
 What are the odds of M successes on N dice at difficulty D? 
 
 This is fairly difficult to calculate, one is best served using a [trinomial distribution equation](https://online.stat.psu.edu/stat414/lesson/17/17.3) and [combinations with repetitions](https://www.cs.sfu.ca/~ggbaker/zju/math/perm-comb-more.html)
 
-#Does this matter?
+# Does this matter?
 
 Do success / failure rates currently feel good in The Contract? Is combat “balanced?” Does the potential for wide interpretation of “partial” success make these odds unimportant?
 
@@ -11,13 +11,13 @@ Partial Successes and Botches give more power to the GM than complete or excepti
 
 A complete success takes power away from the GM, which is also desirable in certain situations. In Combat, partial successes have defined results (damage) and do not fall under GM discretion (though failures and botches still do). This helps combat feel “fair.” 
 
-###When a GM sets a Difficulty, they are defining the odds between “GM discretion,”  “undeniable success,” and “undeniable failure.” 
+### When a GM sets a Difficulty, they are defining the odds between “GM discretion,”  “undeniable success,” and “undeniable failure.” 
 
 Outside of combat, dice probabilities should be thought of in those terms.
 
 A standard Difficulty of 6 means that experts are undeniably good at their tasks, but GMs are very likely to have to interpret a partial success for most.
 
-#How to run this program:
+# How to run this program:
 
 clone repo and `cd` inside. Then:
 
@@ -31,7 +31,7 @@ clone repo and `cd` inside. Then:
 
 For now, you have to edit the source file to run different scenarios. May visualize later.
 
-#How the math is done
+# How the math is done
 
 The number of possible outcomes from rolling N 10-sided dice is easy to calculate. It is 10^N . This is a huge number, so a more useful question is: given N dice, rolled in the manner of The Contract, how many different results are possible accounting for the three outcomes (success, fail, botch)? The answer, it turns out, is C(N+2, 2) . See “combinations with repetitions” here for an explanation. 
 
